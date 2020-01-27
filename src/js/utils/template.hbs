@@ -1,0 +1,20 @@
+<div class="container_arrivals">
+  <h2 class="store-title">{{title}}</h2>
+  <div class="shopItems">
+    {{#each items}}
+      <div class="item">
+        <div class="item_cart">
+          <button class="item_button" data-action="ADD_TO_CART" data-id="{{_id}}">
+            Add to cart
+          </button>
+        </div>
+          <img src=" {{image}} " class="item_img" width="250px" height="310px">
+        <div class="item-name">
+        <span class="item_name"> {{brandName}}</span>
+        <span class="item_desc">{{name}}</span>
+        </div>
+        <span class="item_price">{{price}} $</span>
+      </div>
+    {{/each}}
+    </div>
+</div>
